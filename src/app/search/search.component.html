@@ -1,0 +1,26 @@
+<div class="content" role="main">
+
+	<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 me-2" type="search" name="search" placeholder="Search Profile" aria-label="Search" [(ngModel)]="profilesearch">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="button" (click)="onProfileSearchClick()">Search</button>
+    </form>
+
+    <div class="form-inline list-group" *ngIf="profile">
+	  <!-- <a href="#" class="list-group-item list-group-item-action">
+	    {{ profile.id }} - {{ profile.login }}
+	  </a> -->
+	  <div class="item d-flex align-items-center my-lg-4">
+        <div class="image"><img src="{{ profile.avatar_url }}" alt="{{ profile.name }}" class="img-fluid rounded-circle"></div>
+        <div class="text ms-4">
+        	<a routerLink="/profile/{{profile.login}}">
+            	<h4 class="h4">{{ profile.name }}</h4>
+        	</a>
+            <small>{{ profile.location }}</small>
+        </div>
+            <!-- <h4 class="h4">{{ profile.followers }}</h4></a><small>{{ profile.following }}   </small></div> -->
+      </div>
+
+	</div>
+
+
+</div>

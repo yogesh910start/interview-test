@@ -1,0 +1,99 @@
+<div class="content" role="main">
+  <!-- <div class="card" style="width: 18rem;" *ngIf="profile">
+	  <img class="card-img-top" src="{{ profile.avatar_url }}" alt="{{ profile.name }}">
+	  <div class="card-body">
+	    <h5 class="card-title">{{ profile.name }}</h5>
+	    <p class="card-text">{{ profile.location }}</p>
+	    <a href="#" class="btn btn-primary">Go somewhere</a>
+	  </div>
+	</div> -->
+  <!-- User -->
+  <!-- <ul class="navbar-nav align-items-center d-none d-md-flex">
+          <li class="nav-item dropdown">
+            <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="https://demos.creative-tim.com/argon-dashboard/assets-old/img/theme/team-4.jpg">
+                </span>
+                <div class="media-body ml-2 d-none d-lg-block">
+                  <span class="mb-0 text-sm  font-weight-bold">Jessica Jones</span>
+                </div>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+              <div class=" dropdown-header noti-title">
+                <h6 class="text-overflow m-0">Welcome!</h6>
+              </div>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span>My profile</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-settings-gear-65"></i>
+                <span>Settings</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-calendar-grid-58"></i>
+                <span>Activity</span>
+              </a>
+              <a href="../examples/profile.html" class="dropdown-item">
+                <i class="ni ni-support-16"></i>
+                <span>Support</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="#!" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul> -->
+  <div class="card-container">
+    <div class="card card-large">
+      <!-- <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+      <span>New Component</span> -->
+      <img class="card-img-top" src="{{ profile.avatar_url }}" alt="{{ profile.name }}">
+      <div class="card-body pt-0 pt-md-4">
+        <!-- <h5 class="card-title">{{ profile.name }}</h5>
+        <p class="card-text">{{ profile.location }}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        <div class="row">
+          <div class="col">
+            <div class="card-profile-stats d-flex justify-content-center mt-md-2">
+              <div>
+                <span class="heading">{{ profile.followers }}</span>
+                <span class="description">Followers</span>
+              </div>
+              <div>
+                <span class="heading">{{ profile.following }}</span>
+                <span class="description">Following</span>
+              </div>
+              <div>
+                <span class="heading">{{ profile.public_repos }}</span>
+                <span class="description">Public Repos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <h3>
+            {{ profile.name }}<span class="font-weight-light">, 27</span>
+          </h3>
+          <div class="h5 font-weight-300">
+            <i class="ni location_pin mr-2"></i>{{ profile.location }}
+          </div>
+          <div class="h5 mt-4">
+            <i class="ni business_briefcase-24 mr-2"></i>{{ profile.company }}
+          </div>
+          <div>
+            <i class="ni education_hat mr-2"></i>{{ profile.email }}
+          </div>
+          <hr class="my-4">
+          <!-- <p>Ryan — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music.</p>
+          <a href="#">Show more</a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.form-inline {
+	width: 100%;
+    display: inherit;
+}
+
+.form-inline .item img {
+    padding: 3px;
+    border: 1px solid #28a745;
+    /*max-width: 20%;*/
+}
+
+.form-inline .item .image {
+	max-width: 6%;
+}
+

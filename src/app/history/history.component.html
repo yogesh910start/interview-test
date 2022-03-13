@@ -1,0 +1,20 @@
+<div class="content" role="main">
+
+    <div class="form-inline list-group" *ngIf="searchesresult">
+	  <!-- <a href="#" class="list-group-item list-group-item-action">
+	    {{ profile.id }} - {{ profile.login }}
+	  </a> -->
+	  <div class="item d-flex align-items-center my-lg-4" *ngFor="let search of searchesresult">
+        <div class="image"><img src="{{ search.avatar_url }}" alt="{{ search.name }}" class="img-fluid rounded-circle"></div>
+        <div class="text ms-4">
+        	<a routerLink="/profile/{{search.login}}">
+            	<h4 class="h4">{{ search.name }}</h4>
+        	</a>
+            <small>{{ search.location }}</small>
+        </div>
+      </div>
+
+	</div>
+
+
+</div>
